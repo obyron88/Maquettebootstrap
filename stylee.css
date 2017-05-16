@@ -1,0 +1,17 @@
+header {
+background-image: url("img/image-499666622.jpg");
+background-repeat: no-repeat;
+height: 800px;
+background-size: cover;
+}
+.navbar, .jumbotron {
+   background-color: inherit;
+   border: inherit;
+}
+.jumbotron, .navbar-default .navbar-nav > li > a {
+  color: white;
+}
+.jumbotron p > a {
+  background-color: #E07338;
+  border: inherit;
+}
