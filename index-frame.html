@@ -33,9 +33,10 @@
          </div>
          <div id="navbar" class="navbar-collapse collapse">
            <ul class="nav navbar-nav navbar-right">
-             <li><a href="#">Services</a></li>
+             <li><a id="redirection" href="#">Services</a></li>
              <li><a href="#">Portfolio</a></li>
              <li><a href="#">Testimonials</a></li>
+             <li><a href="#">Team</a></li>
              <li><a href="#">Contact</a></li>
              <li class="dropdown">
                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Archives<span class="caret"></span></a>
@@ -65,40 +66,87 @@
 <!-- Tête Fin -->
 <!-- Fine Features début -->
   <section>
-    <p>Fine Features </p>
-    <img src="img/icon1.png">
-    <p>Finest Pixel Quality</p>
-    <p>Meth is a simple blogging them from<br>
-    your friends Codestag.</p>
-    <img src="img/icon2.png">
-    <p>All Responsive!</p>
-    <p>Meth is a simple blogging them from<br>
-      your friends Codestag.</p>
-    <img src="img/icon4.png">
-    <p>Themed to be elegant</p>
-    <p>Meth is a simple blogging them from<br>
-      your friends Codestag.</p>
-    <img src="img/icon3.png">
-    <p>Lovingly Coded</p>
-    <p>Meth is a simple blogging them from<br>
-      your friends Codestag.</p>
+    <div class="container">
+    <h1>Fine Features</h1>
+    <div class="row">
+      <div class="col-md-6">
+      <div class="col-md-6"><img src="/var/www/html/PHP/Maquette-frame/img/icon1.png"></div>
+      <div class="col-md-6">Finest Pixel Quality</div>
+      <div class="col-md-6">Meth is a simple blogging them from
+your friends Codestag.</div>
+    </div>
+      <div class="col-md-6">
+      <div class="col-md-6"><img src="/var/www/html/PHP/Maquette-frame/img/icon2.png"></div>
+      <div class="col-md-6">All Responsive!</div>
+      <div class="col-md-6">Meth is a simple blogging them from
+your friends Codestag.</div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+    <div class="col-md-6"><img src="/var/www/html/PHP/Maquette-frame/img/icon4.png"></div>
+    <div class="col-md-6">Themed to be elegant</div>
+    <div class="col-md-6">Meth is a simple blogging them from
+your friends Codestag.</div>
+  </div>
+    <div class="col-md-6">
+    <div class="col-md-6"><img src="/var/www/html/PHP/Maquette-frame/img/icon3.png"></div>
+    <div class="col-md-6">Lovingly Coded</div>
+    <div id="monancre" class="col-md-6">Meth is a simple blogging them from
+your friends Codestag.</div>
+  </div>
+  </div>
+</div>
   </section>
+<script>
+  $(document).ready( function () {
+   $('#redirection').click(function() {
+     $('html').animate({scrollTop: $("#monancre").offset().top}, 'slow'      );
+   });
+})
+</script>
 <!-- Fine Features Fin -->
 <!-- Our design samples Début -->
-  <article>
-    <p>Our design samples</p>
-    <p>All</p>
-    <p> Design &nbsp&nbsp Illustration &nbsp&nbsp Logo Design &nbsp&nbsp Typography</p>
-    <img src="img/imaginario.jpg">
-    <img src="img/portfolio_1.jpg">
-    <img src="img/portfolio_2.jpg">
-    <img src="img/portfolio3-300x300.jpg">
-    <img src="img/portfolio_4.jpg">
-    <img src="img/portfolio5.jpg">
+ <article>
+   <div class="container row4">
+    <h1>Our design samples</h1>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+        <div id="navbar2" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Illustration</a></li>
+            <li><a href="#">Logo Design</a></li>
+            <li><a href="#">Typography</a></li>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+    <!-- <p> All Design &nbsp&nbsp Illustration &nbsp&nbsp Logo Design &nbsp&nbsp Typography</p> -->
+<div class="row">
+    <img src="img/imaginario.jpg" class="rlc col-md-4">
+    <img src="img/portfolio_1.jpg" class="rlc col-md-4">
+    <img src="img/portfolio_2.jpg" class="rlc col-md-4">
+    <img src="img/portfolio3-300x300.jpg" class="rlc col-md-4">
+    <img src="img/portfolio_4.jpg" class="rlc col-md-4">
+    <img src="img/portfolio5.jpg" class="rlc col-md-4">
+  </div>
+    </div>
   </article>
 <!-- Our design samples Fin -->
 <!--article orange début  -->
-  <article>
+   <article>
      <p>Honestly, these guys are the best people around to work with, They are<br>
      super commited, delivering exceptional work always.</p>
      <p>Stepahnie Windmill</p>
@@ -123,7 +171,7 @@
   </article>
   <!--3 visages fin  -->
 <!-- sono début -->
-  <article>
+   <article>
     <p>A Static content section</p>
     <p>A Handy shortcode for intro text allows you to style text like that. Which is cool.</p>
     <hr>
@@ -132,7 +180,7 @@
   </article>
 <!-- sono fin -->
 <!-- formulaire debut -->
-<article>
+ <article>
   <p>Get in Touch</p>
   <p>Meth Design Studio</p>
   <p>We always look forward to meet new awesome people and discuss<br>brilliant project ideas. Come visit us! We have a great place to sit.</p>
@@ -173,7 +221,6 @@
     <p>Codestag</p>
   </div>
 </footer>
-
 
 </main>
     </body>

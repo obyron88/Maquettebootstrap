@@ -1,12 +1,20 @@
 header {
-background-image: url("img/image-499666622.jpg");
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)
+    ),url(img/image-499666622.jpg);
 background-repeat: no-repeat;
 height: 800px;
 background-size: cover;
 }
+body {
+  font-family: "HelveticaNeueLTStd";
+}
 .navbar, .jumbotron {
    background-color: inherit;
    border: inherit;
+   margin-top: 40px;
+   margin-left: -50px;
 }
 .jumbotron, .navbar-default .navbar-nav > li > a {
   color: white;
@@ -14,4 +22,27 @@ background-size: cover;
 .jumbotron p > a {
   background-color: #E07338;
   border: inherit;
+  width: 200px;
+  height: 45px;
+}
+.jumbotron p {
+  margin-top: 120px;
+}
+.jumbotron h1 {
+  font-size: 50px;
+}
+section div {
+  padding-top: 30px;
+}
+.container h1 {
+  opacity: 0.7;
+}
+.rlc{
+  padding: inherit;
+}
+.row4 {
+  padding-top: 150px;
+}
+#navbar2 {
+  background-color: red;
 }
